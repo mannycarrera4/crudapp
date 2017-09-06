@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crudapp Frontend</title>
+    <script src="https://use.fontawesome.com/21f24bbeed.js"></script>
+  </head>
+  <body id="app" ng-app="myApp" ng-cloak>
+    <main-app-component></main-app-component>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyC2AuwDN0B9U53EPAvK-LCYdfvfRw_8Jd8",
+        authDomain: "cruddapp.firebaseapp.com",
+        databaseURL: "https://cruddapp.firebaseio.com",
+        projectId: "cruddapp",
+        storageBucket: "cruddapp.appspot.com",
+        messagingSenderId: "936734165182"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+  </body>
+</html>

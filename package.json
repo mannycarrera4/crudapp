@@ -1,0 +1,48 @@
+{
+  "name": "crudapp-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base app --hot --inline"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-ui-bootstrap": "^2.5.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "css-loader": "^0.27.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "firebase": "^4.3.0",
+    "html-loader": "^0.4.5",
+    "less": "^2.7.2",
+    "less-loader": "^3.0.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "jshint": "^2.9.4",
+    "jshint-loader": "^0.8.4",
+    "node-libs-browser": "^2.0.0",
+    "webpack": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannycarrera4/crudapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mannycarrera4/crudapp/issues"
+  },
+  "homepage": "https://github.com/mannycarrera4/crudapp#readme",
+  "description": ""
+}
