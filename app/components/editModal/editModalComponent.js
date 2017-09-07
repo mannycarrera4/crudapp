@@ -7,7 +7,7 @@ angular.module('editModal.editModalComponent', [])
       modalInstance: "=",
       resolve: "<"
     },
-    controller: function ModalInstanceCtrl($scope, $uibModal, $http) {
+    controller: function ModalInstanceCtrl($scope, $uibModal, $http, routeManager) {
       console.log('edit modal controller');
       this.modalData = []
       this.routeName =''
@@ -17,18 +17,9 @@ angular.module('editModal.editModalComponent', [])
         this.show = false
       }
 
-      this.writeUserData = (name) => {
-        const newKey = firebase.database().ref('route').push().key
-        console.warn(newKey);
-        firebase.database().ref('route/' + newKey).set({ //route is table, and set is a post, passing a json object
-          routeName: name
-          // add more properties
-        });
-      }
-
       this.ok = () => {
-        this.writeUserData(this.routeName)
-        console.warn(this.routeName);
+        routeManager.writeRouteData(this.routeName)
+        // console.warn(this.routeName);
         this.modalInstance.close();
       };
 
