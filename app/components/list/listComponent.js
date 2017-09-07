@@ -24,13 +24,6 @@ angular.module('list.listComponent', [])
       })
 
       this.deleteRoute = (routeKey) => {
-        // firebase.database().ref('route').on('value', (snapshot) => {
-        //   const keyList = []
-        //   for (var key in snapshot.val()) {
-        //     keyList.push(key)
-        //   }
-        //   this.keys = keylist
-        // })
 
         // console.warn(this.routeList);
         // console.warn(snapshot);/
