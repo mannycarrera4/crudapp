@@ -2,13 +2,14 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr data="route" ng-repeat="route in $ctrl.routeList">
       <td>{{route.routeName}}</td>
       <td>
-        <button type="button" class="btn btn-default" aria-label="Left Align", ng-click="$ctrl.open(climbingRoute)">
+        <button type="button" class="btn btn-default" aria-label="Left Align", ng-click="$ctrl.open(route.key)">
           <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
         </button>
         <button class="btn btn-danger" ng-click="$ctrl.deleteRouteFromList(route.key)">
