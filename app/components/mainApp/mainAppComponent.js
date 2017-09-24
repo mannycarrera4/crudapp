@@ -6,8 +6,9 @@ angular.module('mainApp', [])
   .component('mainAppComponent', {
     templateUrl: 'components/mainApp/mainAppWrapper.html',
     controller: function ($http, $uibModal, $scope) {
-      this.showModal = false
-      this.open = (climbingRoute) => {
+      // this.showModal = false
+      this.open = (route) => {
+        console.warn(route);
         $uibModal.open({
           component: 'editModal',
           resolve: {
